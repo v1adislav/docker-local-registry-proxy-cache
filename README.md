@@ -8,7 +8,7 @@
 * `ENV_DOCKER_REGISTRY_PORT` - порт на котором запущен registry.
 
 ### Запуск compose файла
-* В `/etc/docker/daemon.json` нужно добавить `"registry-mirrors": ["https://docker-registry.litebox.ru"]`
+* В `/etc/docker/daemon.json` нужно добавить `"registry-mirrors": ["https://docker-registry.test.ru"]`
 * Выполинть команду `systemctl daemon-reload && service docker restart`
 * Настроить nginx на хосте. [Пример nginx конфига](https://github.com/v1adislav/docker-local-registry-proxy-cache/blob/main/docker-registry.conf) для registry
 * Запустить сервис `docker-compose up -d`
