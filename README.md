@@ -1,0 +1,1 @@
+# docker-local-registry-proxy-cache
