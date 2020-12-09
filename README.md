@@ -16,4 +16,4 @@
 ### Проверка cache proxy
 * `curl docker-registry.test.ru/v2/_catalog` вернет вам пустой registry вида `{"repositories":[]}`
 * Спулим любой образ, например ubuntu, `docker pull ubuntu`
-* Проверим нащ docker-registry `curl docker-registry.test.ru/v2/_catalog`, уже должен быть там образ, который спулили `{"repositories":["library/ubuntu"]}`
+* Проверим наш docker-registry `curl docker-registry.test.ru/v2/_catalog`, уже должен быть там образ, который спулили `{"repositories":["library/ubuntu"]}`
