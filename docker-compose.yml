@@ -10,13 +10,9 @@ services:
     environment:
         REGISTRY_HTTP_TLS_CERTIFICATE: /certs/our_key.crt
         REGISTRY_HTTP_TLS_KEY: /certs/our_key.key
-      #  REGISTRY_AUTH: htpasswd
-       # REGISTRY_AUTH_HTPASSWD_PATH: /auth/registry.auth
-        #REGISTRY_AUTH_HTPASSWD_REALM: "Registry realm"
     volumes:
       - ./data:/var/lib/registry
       - ./certs:/certs
-      - ./auth:/auth
       - ./config:/etc/docker/registry
 
   docker-registry-ui:
